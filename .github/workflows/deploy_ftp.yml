@@ -3,7 +3,7 @@ name: Deploy Website to Shared Hosting via FTP
 on:
   push:
     branches:
-      - main  # Khi nhanh main thay doi thi chay
+      - master  # Khi nhanh main thay doi thi chay
 
 jobs:
   web-deploy:
