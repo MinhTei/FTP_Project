@@ -1,27 +1,13 @@
 <?php
-// Ket noi database
-include 'db_connect.php';
+require_once 'config.php';
 
-// Truy van du lieu
-$sql = "SELECT * FROM users";
-$result = $conn->query($sql);
+// Nếu đã đăng nhập, chuyển hướng sang dashboard
+if (is_logged_in()) {
+    header("Location: dashboard.php");
+    exit();
+} else {
+    // Nếu chưa đăng nhập, chuyển hướng sang login
+    header("Location: login.php");
+    exit();
+}
 ?>
-
-<!DOCTYPE html>
-<html>
-<head><title>PHP Fullstack Demo</title></head>
-<body>
-    <h1>Danh sach User tu MySQL (Shared Hosting)</h1>
-    <ul>
-        <?php
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                echo "<li>" . $row["name"] . " - Email: " . $row["email"] . "</li>";
-            }
-        } else {
-            echo "Chua co du lieu";
-        }
-        ?>
-    </ul>
-</body>
-</html>
