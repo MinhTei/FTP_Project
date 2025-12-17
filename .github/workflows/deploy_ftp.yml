@@ -19,6 +19,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        # Thu muc muon day len host (thuong la htdocs hoac public_html)
-        # Ban kiem tra tren InfinityFree xem thu muc web la gi nhe
+        # Thu muc muon day len host ( htdocs hoac public_html)
+  
         server-dir: /htdocs/
