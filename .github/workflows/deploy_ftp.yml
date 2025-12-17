@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.FTP_PORT }}
-        protocol: sftp
+        protocol: ftps
         # Thu muc muon day len host (thuong la htdocs hoac public_html)
         # Ban kiem tra tren InfinityFree xem thu muc web la gi nhe
         server-dir: /htdocs/
