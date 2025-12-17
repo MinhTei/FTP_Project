@@ -102,6 +102,22 @@ body {
     background: #c0392b;
 }
 
+/* Student Info */
+.student-info {
+    background: #e8f4f8;
+    border-left: 4px solid #667eea;
+    padding: 15px 30px;
+    margin: 0;
+    border-bottom: 1px solid #d0e8f2;
+}
+
+.student-info p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 500;
+}
+
 /* Stats */
 .stats {
     display: grid;
