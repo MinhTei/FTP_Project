@@ -61,6 +61,7 @@ $total = count($todos);
         <div class="student-info">
             <p><strong>Trường:</strong> Đại học Công nghệ Sài Gòn</p>
             <p><strong>Sinh viên:</strong> DH52201380 - Bùi Minh Tài</p>
+            <p><strong>Lớp:</strong> D22-TH07</p>
         </div>
         <div class="stats">
             <div class="stat-item">
