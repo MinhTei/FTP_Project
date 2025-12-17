@@ -112,10 +112,14 @@ body {
 }
 
 .student-info p {
-    margin: 0;
+    margin: 5px 0;
     font-size: 1.1em;
     color: #333;
     font-weight: 500;
+}
+
+.student-info p:first-child {
+    margin-top: 0;
 }
 
 /* Stats */
